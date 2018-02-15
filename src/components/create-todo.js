@@ -29,7 +29,8 @@ export default class TodosList extends React.Component {
     handleCreate(event) {
       event.preventDefault();
 
-      const createInput = this.refs.createInput; const task = createInput.value;
+      const createInput = this.refs.createInput;
+      const task = createInput.value;
       const validateInput = this.validateInput(task);
 
       if (validateInput) {
